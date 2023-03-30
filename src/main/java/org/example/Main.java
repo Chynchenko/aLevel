@@ -1,5 +1,11 @@
-package org.example;public class Main {
-    public static void main(String[] args) {
-        System.out.println("Hello world!");
+package org.example;
+
+import util.Concurrency;
+import util.CreateAndStartThreads;
+
+public class Main {
+    public static void main(String[] args) throws InterruptedException {
+        CreateAndStartThreads.createAndStartThreads();
+        Concurrency.main(args);
     }
 }
