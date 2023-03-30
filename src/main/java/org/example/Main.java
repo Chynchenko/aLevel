@@ -1,11 +1,11 @@
 package org.example;
 
-import util.MultiThreadingArray;
+import util.Concurrency;
+import util.CreateAndStartThreads;
 
 public class Main {
-    public static void main(String[] args) {
-            MultiThreadingArray.fillArray();
-            MultiThreadingArray.sumArray();
-            MultiThreadingArray.checkSum();
+    public static void main(String[] args) throws InterruptedException {
+        CreateAndStartThreads.createAndStartThreads();
+        Concurrency.main(args);
     }
 }
